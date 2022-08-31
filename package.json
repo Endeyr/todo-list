@@ -11,10 +11,13 @@
 	"author": "Aaron Thompson",
 	"license": "ISC",
 	"devDependencies": {
-		"css-loader": "^5.0.1",
+		"css-loader": "^5.2.7",
 		"style-loader": "^2.0.0",
 		"webpack": "^5.74.0",
 		"webpack-cli": "^4.10.0",
 		"webpack-dev-server": "^4.10.1"
+	},
+	"dependencies": {
+		"watch": "^0.13.0"
 	}
 }
