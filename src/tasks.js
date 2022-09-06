@@ -1,4 +1,7 @@
 let tasks = () => {
+	// Local Storage
+	// window.localStorage
+
 	window.addEventListener('load', () => {
 		let form = document.querySelector('#new-task-form')
 		let input = document.querySelector('#new-task-input')
@@ -8,12 +11,12 @@ let tasks = () => {
 			e.preventDefault()
 
 			let task = input.value
-
+			// Alert
 			if (!task) {
 				alert('Please fill out the task')
 				return
 			}
-
+			// Task DOM
 			let task_el = document.createElement('div')
 			task_el.classList = 'task'
 

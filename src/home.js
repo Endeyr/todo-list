@@ -1,7 +1,9 @@
+import aside from './aside'
 import footer from './footer'
 
 let home = () => {
 	let content = document.getElementById('content')
+
 	// Header DOM
 	let header = document.createElement('header')
 	content.appendChild(header)
@@ -20,6 +22,7 @@ let home = () => {
 	inputTask.placeholder = 'What do you have planned?'
 	form.appendChild(inputTask)
 
+	// Submit Button
 	let inputSubmit = document.createElement('input')
 	inputSubmit.type = 'submit'
 	inputSubmit.id = 'new-task-submit'
@@ -42,6 +45,12 @@ let home = () => {
 	tasks.id = 'tasks'
 	section.appendChild(tasks)
 
+	// Aside DOM
+	if (!document.querySelector('aside')) {
+		aside()
+	}
+
+	// Footer DOM
 	if (!document.querySelector('footer')) {
 		footer()
 	}
